@@ -6,4 +6,6 @@
     <color name="yellow">#ffd230</color>
     <color name="grey">#4F4A45</color>
     <color name="purple">#8a96ee</color>
+    <color name="red">#e50027</color>
+    <color name="dark_grey">#b2b7bd</color>
 </resources>

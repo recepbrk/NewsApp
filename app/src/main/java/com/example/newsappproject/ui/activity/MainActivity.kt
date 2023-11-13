@@ -1,9 +1,15 @@
-package com.example.newsappproject
+package com.example.newsappproject.ui.activity
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.fragment.app.Fragment
+import com.example.newsappproject.R
 import com.example.newsappproject.databinding.ActivityMainBinding
+import com.example.newsappproject.ui.category.CategoryFragment
+import com.example.newsappproject.ui.home.HomeFragment
+import com.example.newsappproject.ui.profile.ProfileFragment
+import com.example.newsappproject.ui.save.SaveFragment
+import com.example.newsappproject.ui.search.SearchFragment
 
 class MainActivity : AppCompatActivity() {
     private lateinit var binding:ActivityMainBinding
