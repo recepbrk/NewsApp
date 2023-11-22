@@ -10,7 +10,9 @@ import com.example.newsappproject.ui.home.HomeFragment
 import com.example.newsappproject.ui.profile.ProfileFragment
 import com.example.newsappproject.ui.save.SaveFragment
 import com.example.newsappproject.ui.search.SearchFragment
+import dagger.hilt.android.AndroidEntryPoint
 
+@AndroidEntryPoint
 class MainActivity : AppCompatActivity() {
     private lateinit var binding:ActivityMainBinding
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -24,22 +26,27 @@ class MainActivity : AppCompatActivity() {
                     replaceFragment(HomeFragment())
                     true
                 }
+
                 R.id.bottom_category ->{
                     replaceFragment(CategoryFragment())
                     true
                 }
+
                 R.id.bottom_save ->{
                     replaceFragment(SaveFragment())
                     true
                 }
+
                 R.id.bottom_search ->{
                     replaceFragment(SearchFragment())
                     true
                 }
+
                 R.id.bottom_profile ->{
                     replaceFragment(ProfileFragment())
                     true
                 }
+
                 else -> false
             }
         }
