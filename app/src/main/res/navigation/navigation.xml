@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation"
+    app:startDestination="@id/bottom_home">
+
+    <fragment
+        android:id="@+id/bottom_home"
+        android:name="com.example.newsappproject.ui.home.HomeFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home">
+        <action
+            android:id="@+id/action_homeFragment_to_detailsFragment"
+            app:destination="@id/detailsFragment" />
+
+    </fragment>
+    <fragment
+        android:id="@+id/detailsFragment"
+        android:name="com.example.newsappproject.ui.details.DetailsFragment"
+        android:label="fragment_details"
+        tools:layout="@layout/fragment_details">
+        <argument android:name="arg_url" />
+        <action
+            android:id="@+id/action_detailsFragment_to_bottom_home"
+            app:destination="@id/bottom_home" />
+    </fragment>
+    <fragment
+        android:id="@+id/bottom_category"
+        android:name="com.example.newsappproject.ui.category.CategoryFragment"
+        android:label="fragment_category"
+        tools:layout="@layout/fragment_category" />
+    <fragment
+        android:id="@+id/bottom_profile"
+        android:name="com.example.newsappproject.ui.profile.ProfileFragment"
+        android:label="fragment_profile"
+        tools:layout="@layout/fragment_profile" />
+    <fragment
+        android:id="@+id/bottom_save"
+        android:name="com.example.newsappproject.ui.save.SaveFragment"
+        android:label="fragment_save"
+        tools:layout="@layout/fragment_save" />
+    <fragment
+        android:id="@+id/bottom_search"
+        android:name="com.example.newsappproject.ui.search.SearchFragment"
+        android:label="fragment_search"
+        tools:layout="@layout/fragment_search" />
+</navigation>

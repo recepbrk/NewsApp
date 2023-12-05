@@ -13,6 +13,7 @@ import android.view.ViewGroup
 import android.widget.Toast
 import androidx.fragment.app.viewModels
 import androidx.lifecycle.lifecycleScope
+import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.newsappproject.databinding.FragmentHomeBinding
 import com.example.newsappproject.ui.adapter.NewsAdapter
@@ -60,6 +61,14 @@ class HomeFragment : Fragment() {
                         DataStatus.Status.SUCCESS -> {
                             pbLoading.isVisible(false, rvLastNews)
                             newsAdapter.setData(it.data!!)
+                            newsAdapter.setOnItemClickListener {
+
+                                val direction =
+                                    HomeFragmentDirections.actionHomeFragmentToDetailsFragment(it.url)
+                                findNavController().navigate(direction)
+                                Toast.makeText(context, "click çalıştı", Toast.LENGTH_LONG).show()
+                            }
+
 
                         }
 

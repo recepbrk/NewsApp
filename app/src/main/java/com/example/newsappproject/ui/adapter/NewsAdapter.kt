@@ -10,12 +10,12 @@ import javax.inject.Inject
 
 class NewsAdapter @Inject constructor() : RecyclerView.Adapter<NewsAdapter.MyViewHolder>() {
 
-    lateinit var binding: NewsItemBinding
     private var news = emptyList<ResponseTopHeadLine.Article>()
+    lateinit var binding: NewsItemBinding
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): MyViewHolder {
-        val infilater = LayoutInflater.from(parent.context)
-        binding = NewsItemBinding.inflate(infilater, parent, false)
+        val inflater = LayoutInflater.from(parent.context)
+        binding = NewsItemBinding.inflate(inflater, parent, false)
         return MyViewHolder(binding)
     }
 
@@ -35,13 +35,14 @@ class NewsAdapter @Inject constructor() : RecyclerView.Adapter<NewsAdapter.MyVie
                     it(article)
                 }
             }
-        }
 
-        private var onItemClickListener: ((ResponseTopHeadLine.Article) -> Unit)? = null
-
-        fun setOnItemClickListener(listener: (ResponseTopHeadLine.Article) -> Unit) {
-            onItemClickListener = listener
         }
+    }
+
+    private var onItemClickListener: ((ResponseTopHeadLine.Article) -> Unit)? = null
+
+    fun setOnItemClickListener(listener: (ResponseTopHeadLine.Article) -> Unit) {
+        onItemClickListener = listener
     }
 
     fun setData(newData: ResponseTopHeadLine) {
@@ -50,6 +51,5 @@ class NewsAdapter @Inject constructor() : RecyclerView.Adapter<NewsAdapter.MyVie
         news = newData.articles
         diffUtils.dispatchUpdatesTo(this)
     }
-
 
 }
