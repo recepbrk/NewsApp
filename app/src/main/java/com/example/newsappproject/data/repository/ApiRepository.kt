@@ -6,4 +6,7 @@ import javax.inject.Inject
 class ApiRepository @Inject constructor(private val apiServices: ApiServises) {
 
     suspend fun getTopHeadlineNews(country: String) = apiServices.getTopHeadlineNews(country)
+
+    suspend fun getEverythingFromApi(searchQuery: String, pageNumber: Int) =
+        apiServices.getEverythingNews(searchQuery, pageNumber)
 }
