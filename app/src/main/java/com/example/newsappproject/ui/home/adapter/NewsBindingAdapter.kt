@@ -1,4 +1,4 @@
-package com.example.newsappproject.ui.adapter
+package com.example.newsappproject.ui.home.adapter
 
 import android.widget.ImageView
 import androidx.databinding.BindingAdapter

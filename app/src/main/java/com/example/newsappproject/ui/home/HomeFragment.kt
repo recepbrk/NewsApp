@@ -1,10 +1,6 @@
 package com.example.newsappproject.ui.home
 
-import android.annotation.SuppressLint
-import android.content.Intent
-import android.net.Uri
 import android.os.Bundle
-import android.util.Log
 
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
@@ -16,7 +12,7 @@ import androidx.lifecycle.lifecycleScope
 import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.newsappproject.databinding.FragmentHomeBinding
-import com.example.newsappproject.ui.adapter.NewsAdapter
+import com.example.newsappproject.ui.home.adapter.NewsAdapter
 import com.example.newsappproject.util.extensions.initRecycler
 import com.example.newsappproject.util.extensions.isVisible
 import com.example.newsappproject.util.resource.DataStatus

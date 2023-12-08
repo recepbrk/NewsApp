@@ -1,4 +1,4 @@
-package com.example.newsappproject.ui.adapter
+package com.example.newsappproject.ui.home.adapter
 
 import androidx.recyclerview.widget.DiffUtil
 import com.example.newsappproject.data.model.ResponseTopHeadLine
