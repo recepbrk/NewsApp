@@ -9,12 +9,19 @@ import androidx.recyclerview.widget.RecyclerView
 import com.example.newsappproject.R
 import com.example.newsappproject.ui.category.CategoryItem
 
-class CategoryAdapter(private val categoryList: ArrayList<CategoryItem>) :
+class CategoryAdapter(
+    private val categoryList: ArrayList<CategoryItem>,
+    val listener: MyClickListener
+) :
     RecyclerView.Adapter<CategoryAdapter.ViewHolder>() {
 
     inner class ViewHolder(view: View) : RecyclerView.ViewHolder(view) {
-        val categoryImage: ImageView = view.findViewById(R.id.category_imageView)
-        val categoryTitle: TextView = view.findViewById(R.id.category_textView)
+        init {
+            itemView.setOnClickListener {
+                val position = adapterPosition
+                listener.onClick(position)
+            }
+        }
     }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
@@ -27,9 +34,20 @@ class CategoryAdapter(private val categoryList: ArrayList<CategoryItem>) :
 
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
         val currentItem = categoryList[position]
-        holder.categoryImage.setImageResource(currentItem.image)
-        holder.categoryTitle.text = currentItem.title
+        holder.itemView.apply {
+            findViewById<ImageView>(R.id.category_imageView).setImageResource(currentItem.image)
+            findViewById<TextView>(R.id.category_textView).text = currentItem.title
+
+
+        }
+    }
+
+    interface MyClickListener {
+        fun onClick(position: Int)
     }
 }
+
+
+
 
 

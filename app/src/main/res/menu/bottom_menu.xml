@@ -1,29 +1,29 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
-<item
-    android:id="@+id/bottom_home"
-    android:title="Home"
-    android:enabled="true"
-    android:name="com.example.newsappproject.ui.home.HomeFragment"
-    android:icon="@drawable/home" />
+    <item
+        android:id="@+id/bottom_home"
+        android:title="Home"
+        android:enabled="true"
+        android:name="com.example.newsappproject.ui.home.HomeFragment"
+        android:icon="@drawable/home" />
     <item
         android:id="@+id/bottom_category"
         android:name="com.example.newsappproject.ui.category.CategoryFragment"
         android:title="Category"
-        android:icon="@drawable/category"/>
+        android:icon="@drawable/category" />
     <item
         android:id="@+id/bottom_save"
         android:title="Save"
         android:name="com.example.newsappproject.ui.save.SaveFragment"
-        android:icon="@drawable/save"/>
+        android:icon="@drawable/save" />
     <item
         android:id="@+id/bottom_search"
         android:title="Search"
         android:name="com.example.newsappproject.ui.search.SearchFragment"
-        android:icon="@drawable/search"/>
+        android:icon="@drawable/search" />
     <item
         android:id="@+id/bottom_profile"
         android:title="Profile"
         android:name="com.example.newsappproject.ui.profile.ProfileFragment"
-        android:icon="@drawable/profile"/>
+        android:icon="@drawable/profile" />
 </menu>

@@ -1,14 +1,15 @@
 package com.example.newsappproject.ui.search
 
 import android.os.Bundle
-import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Toast
 import androidx.core.widget.addTextChangedListener
+import androidx.fragment.app.Fragment
 import androidx.fragment.app.viewModels
 import androidx.navigation.fragment.findNavController
+import androidx.navigation.fragment.navArgs
 import com.example.newsappproject.databinding.FragmentSearchBinding
 import com.example.newsappproject.ui.search.adapter.SearchAdapter
 import com.example.newsappproject.util.resource.DataStatus
@@ -22,9 +23,10 @@ import kotlinx.coroutines.launch
 class SearchFragment : Fragment() {
     private lateinit var binding: FragmentSearchBinding
     private val searchViewModel: SearchViewModel by viewModels()
-
-
     private lateinit var searchAdapter: SearchAdapter
+    private val args: SearchFragmentArgs by navArgs()
+    private var url = ""
+
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -36,6 +38,7 @@ class SearchFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
+
         setupRecyclerview()
         searchQuery()
         observeData()
@@ -47,10 +50,12 @@ class SearchFragment : Fragment() {
         searchAdapter.setOnItemClickListener {
             val action = SearchFragmentDirections.actionBottomSearchToDetailsFragment(it.url)
             findNavController().navigate(action)
+
         }
     }
 
     private fun searchQuery() {
+
         var job: Job? = null
         binding.searchEditText.addTextChangedListener { editable ->
             job?.cancel()

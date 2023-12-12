@@ -24,7 +24,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_alignParentBottom="true"
-            android:background="#cc000000">
+            android:background="#bf8a96ee">
 
             <TextView
                 android:id="@+id/category_textView"
@@ -33,6 +33,7 @@
                 android:ellipsize="end"
                 android:gravity="center"
                 android:maxLines="1"
+                android:fontFamily="@font/medium"
                 android:paddingHorizontal="16dp"
                 android:paddingVertical="4dp"
                 android:textColor="@color/white"
