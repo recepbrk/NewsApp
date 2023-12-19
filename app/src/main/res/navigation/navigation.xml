@@ -31,8 +31,8 @@
         android:label="fragment_category"
         tools:layout="@layout/fragment_category">
         <action
-            android:id="@+id/action_bottom_category_to_bottom_search"
-            app:destination="@id/bottom_search" />
+            android:id="@+id/action_bottom_category_to_categoryDetailFragment"
+            app:destination="@id/categoryDetailFragment" />
     </fragment>
     <fragment
         android:id="@+id/bottom_profile"
@@ -55,5 +55,19 @@
         <argument
             android:name="arg_title"
             app:argType="string" />
+    </fragment>
+    <fragment
+        android:id="@+id/categoryDetailFragment"
+        android:name="com.example.newsappproject.ui.category.categorydetails.CategoryDetailFragment"
+        android:label="CategoryDetailFragment">
+        <action
+            android:id="@+id/action_categoryDetailFragment_to_detailsFragment"
+            app:destination="@id/detailsFragment" />
+        <argument
+            android:name="arg_category_title"
+            app:argType="string" />
+        <action
+            android:id="@+id/action_categoryDetailFragment_to_bottom_category"
+            app:destination="@id/bottom_category" />
     </fragment>
 </navigation>

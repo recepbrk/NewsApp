@@ -60,15 +60,13 @@ class CategoryFragment : Fragment(), CategoryAdapter.MyClickListener {
     }
 
     override fun onClick(position: Int) {
-        when (position) {
-            0 -> {
+        val action =
+            CategoryFragmentDirections.actionBottomCategoryToCategoryDetailFragment(
+                categoryArrayList[position].title
+            )
 
-                val action =
-                    CategoryFragmentDirections.actionBottomCategoryToBottomSearch("HOT NEWS ")
-                findNavController().navigate(action)
+        findNavController().navigate(action)
 
-            }
-        }
 
     }
 
