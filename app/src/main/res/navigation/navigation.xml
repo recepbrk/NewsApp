@@ -12,7 +12,8 @@
         tools:layout="@layout/fragment_home">
         <action
             android:id="@+id/action_homeFragment_to_detailsFragment"
-            app:destination="@id/detailsFragment" />
+            app:destination="@id/detailsFragment"
+            app:enterAnim="@android:anim/slide_in_left" />
 
     </fragment>
     <fragment
@@ -20,10 +21,14 @@
         android:name="com.example.newsappproject.ui.details.DetailsFragment"
         android:label="fragment_details"
         tools:layout="@layout/fragment_details">
-        <argument android:name="arg_url" />
+        <argument
+            android:name="article"
+            app:argType="com.example.newsappproject.data.model.ResponseTopHeadLine$Article" />
         <action
             android:id="@+id/action_detailsFragment_to_bottom_home"
-            app:destination="@id/bottom_home" />
+            app:destination="@id/bottom_home"
+            app:exitAnim="@android:anim/slide_out_right" />
+
     </fragment>
     <fragment
         android:id="@+id/bottom_category"
@@ -32,7 +37,8 @@
         tools:layout="@layout/fragment_category">
         <action
             android:id="@+id/action_bottom_category_to_categoryDetailFragment"
-            app:destination="@id/categoryDetailFragment" />
+            app:destination="@id/categoryDetailFragment"
+            app:enterAnim="@android:anim/slide_in_left" />
     </fragment>
     <fragment
         android:id="@+id/bottom_profile"
@@ -43,7 +49,12 @@
         android:id="@+id/bottom_save"
         android:name="com.example.newsappproject.ui.save.SaveFragment"
         android:label="fragment_save"
-        tools:layout="@layout/fragment_save" />
+        tools:layout="@layout/fragment_save">
+        <action
+            android:id="@+id/action_bottom_save_to_detailsFragment"
+            app:destination="@id/detailsFragment"
+            app:enterAnim="@android:anim/slide_in_left" />
+    </fragment>
     <fragment
         android:id="@+id/bottom_search"
         android:name="com.example.newsappproject.ui.search.SearchFragment"
@@ -51,7 +62,8 @@
         tools:layout="@layout/fragment_search">
         <action
             android:id="@+id/action_bottom_search_to_detailsFragment"
-            app:destination="@id/detailsFragment" />
+            app:destination="@id/detailsFragment"
+            app:enterAnim="@android:anim/slide_in_left" />
         <argument
             android:name="arg_title"
             app:argType="string" />
@@ -62,7 +74,8 @@
         android:label="CategoryDetailFragment">
         <action
             android:id="@+id/action_categoryDetailFragment_to_detailsFragment"
-            app:destination="@id/detailsFragment" />
+            app:destination="@id/detailsFragment"
+            app:enterAnim="@android:anim/slide_in_left" />
         <argument
             android:name="arg_category_title"
             app:argType="string" />

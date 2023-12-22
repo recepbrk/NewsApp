@@ -59,7 +59,7 @@ class HomeFragment : Fragment() {
                             newsAdapter.setOnItemClickListener {
 
                                 val direction =
-                                    HomeFragmentDirections.actionHomeFragmentToDetailsFragment(it.url)
+                                    HomeFragmentDirections.actionHomeFragmentToDetailsFragment(it)
                                 findNavController().navigate(direction)
                                 Toast.makeText(context, "click çalıştı", Toast.LENGTH_LONG).show()
                             }

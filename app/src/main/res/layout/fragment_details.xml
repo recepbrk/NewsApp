@@ -44,6 +44,20 @@
 
     </androidx.appcompat.widget.Toolbar>
 
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab_save"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/favorite_icon"
+        android:backgroundTint="@color/purple"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginEnd="24dp"
+        android:layout_marginBottom="70dp"
+        app:fabSize="normal"
+        app:tint="@android:color/white" />
+
+
     <WebView
         android:id="@+id/webwiew"
         android:layout_width="match_parent"

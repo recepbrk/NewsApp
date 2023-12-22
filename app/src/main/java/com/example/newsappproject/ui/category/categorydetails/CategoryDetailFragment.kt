@@ -21,7 +21,7 @@ import kotlinx.coroutines.launch
 class CategoryDetailFragment : Fragment() {
     private lateinit var binding: FragmentCategoryDetailBinding
     private val categoryDetailsViewModel: CategoryDetailsViewModel by viewModels()
-    private lateinit var categoryDetailAdapter: CategoryDetailsAdapter
+    private lateinit var categoryDetailAdapter: CategoryDetailsAdapter//Burada yeniden adapter yazmama gerek yoktu SearchAdapteri kullanabilirdim.
     private val args: CategoryDetailFragmentArgs by navArgs()
     private var categoryTitle = ""
 
@@ -54,7 +54,7 @@ class CategoryDetailFragment : Fragment() {
         binding.categoryDetailsRecyclerView.adapter = categoryDetailAdapter
         categoryDetailAdapter.setOnItemClickListener {
             val action =
-                CategoryDetailFragmentDirections.actionCategoryDetailFragmentToDetailsFragment(it.url)
+                CategoryDetailFragmentDirections.actionCategoryDetailFragmentToDetailsFragment(it)
             findNavController().navigate(action)
 
         }

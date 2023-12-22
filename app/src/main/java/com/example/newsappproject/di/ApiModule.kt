@@ -1,6 +1,10 @@
 package com.example.newsappproject.di
 
+import android.content.Context
+import androidx.room.Room
 import com.example.newsappproject.BuildConfig
+import com.example.newsappproject.data.source.local.NewsDao
+import com.example.newsappproject.data.source.local.NewsDatabase
 import com.example.newsappproject.data.source.remote.ApiServises
 import com.example.newsappproject.util.constants.Constants.API_KEY
 import com.example.newsappproject.util.constants.Constants.BASE_URL
@@ -10,6 +14,7 @@ import com.google.gson.GsonBuilder
 import dagger.Module
 import dagger.Provides
 import dagger.hilt.InstallIn
+import dagger.hilt.android.qualifiers.ApplicationContext
 import dagger.hilt.components.SingletonComponent
 import okhttp3.Interceptor
 import okhttp3.OkHttpClient
@@ -76,4 +81,16 @@ object ApiModule {
             .addConverterFactory(GsonConverterFactory.create(gson))
             .build()
             .create(ApiServises::class.java)
+
+    @Provides
+    @Singleton
+    fun provideArticleDatabase(@ApplicationContext context: Context): NewsDatabase =
+        Room.databaseBuilder(context, NewsDatabase::class.java, "articleDatabase")
+            .fallbackToDestructiveMigration().build()
+
+    @Provides
+    @Singleton
+    fun provideArticleDao(articleDb: NewsDatabase): NewsDao {
+        return articleDb.getArticleFromDao()
+    }
 }

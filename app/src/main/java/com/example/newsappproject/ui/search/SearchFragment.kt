@@ -45,7 +45,7 @@ class SearchFragment : Fragment() {
         searchAdapter = SearchAdapter()
         binding.searchRecyclerView.adapter = searchAdapter
         searchAdapter.setOnItemClickListener {
-            val action = SearchFragmentDirections.actionBottomSearchToDetailsFragment(it.url)
+            val action = SearchFragmentDirections.actionBottomSearchToDetailsFragment(it)
             findNavController().navigate(action)
 
         }

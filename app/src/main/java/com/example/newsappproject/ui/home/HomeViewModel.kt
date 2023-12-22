@@ -5,7 +5,7 @@ import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import com.example.newsappproject.data.model.ResponseTopHeadLine
-import com.example.newsappproject.data.repository.ApiRepository
+import com.example.newsappproject.data.repository.NewsRepository
 import com.example.newsappproject.util.resource.DataStatus
 import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.launch
@@ -13,7 +13,7 @@ import retrofit2.Response
 import javax.inject.Inject
 
 @HiltViewModel
-class HomeViewModel @Inject constructor(private val repository: ApiRepository) : ViewModel() {
+class HomeViewModel @Inject constructor(private val repository: NewsRepository) : ViewModel() {
 
     private val _newsList: MutableLiveData<DataStatus<ResponseTopHeadLine>> = MutableLiveData()
     val newsList: LiveData<DataStatus<ResponseTopHeadLine>>

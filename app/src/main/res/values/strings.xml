@@ -4,4 +4,8 @@
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="share">Share News</string>
     <string name="hot_news">HOT NEWS</string>
+    <string name="snackbar_undo">Undo</string>
+    <string name="successfully_deleted_message">Successfully deleted!</string>
+
+
 </resources>
