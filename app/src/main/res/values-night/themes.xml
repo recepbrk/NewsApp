@@ -4,4 +4,16 @@
         <!-- Customize your dark theme here. -->
         <!-- <item name="colorPrimary">@color/my_dark_primary</item> -->
     </style>
+
+    <style name="ScreenBackground">
+        <item name="android:background">@color/black</item>
+    </style>
+
+    <style name="CardBackground">
+        <item name="android:background">@color/black</item>
+    </style>
+
+    <style name="TextColor">
+        <item name="android:textColor">@color/white</item>
+    </style>
 </resources>

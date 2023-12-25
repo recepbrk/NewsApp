@@ -28,7 +28,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:fontFamily="sans-serif-black"
+            android:fontFamily="@font/medium"
             android:text="Search News"
             android:textColor="@color/white"
             android:textSize="24sp"
