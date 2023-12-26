@@ -23,7 +23,7 @@
         android:id="@+id/bottom_navigation"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@color/white"
+        style="@style/CardBackground"
         app:itemActiveIndicatorStyle="@style/App.Custom.Indicator"
         app:itemIconSize="30dp"
         app:itemIconTint="#8a96ee"

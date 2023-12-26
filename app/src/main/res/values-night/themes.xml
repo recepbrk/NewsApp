@@ -1,19 +1,47 @@
 <resources>
     <!-- Base application theme. -->
     <style name="Base.Theme.NewsAppProject" parent="Theme.Material3.DayNight.NoActionBar">
-        <!-- Customize your dark theme here. -->
-        <!-- <item name="colorPrimary">@color/my_dark_primary</item> -->
+        <!-- Customize your light theme here. -->
+        <item name="colorPrimary">@color/purple</item>
+        <item name="colorPrimaryVariant">@color/purple</item>
+        <item name="android:statusBarColor">@color/night</item>
+    </style>
+
+    <style name="App.Custom.Indicator" parent="Widget.Material3.BottomNavigationView.ActiveIndicator">
+        <item name="android:color">@color/night</item>
     </style>
 
     <style name="ScreenBackground">
         <item name="android:background">@color/black</item>
     </style>
 
-    <style name="CardBackground">
-        <item name="android:background">@color/black</item>
+    <style name="FabBackground">
+        <item name="android:backgroundTint">@color/night</item>
+    </style>
+
+    <style name="CategoryFrame">
+        <item name="android:background">@color/transparant_night</item>
+    </style>
+
+    <style name="ToolbarBackground">
+        <item name="android:background">@color/night</item>
+    </style>
+
+    <style name="CardBackground" parent="CardView">
+        <item name="cardBackgroundColor">@color/night</item>
+
     </style>
 
     <style name="TextColor">
+        <item name="android:textColor">@color/white</item>
+
+    </style>
+
+    <style name="TextColor2">
+        <item name="android:textColor">@color/color2</item>
+    </style>
+
+    <style name="TextColor3">
         <item name="android:textColor">@color/white</item>
     </style>
 </resources>

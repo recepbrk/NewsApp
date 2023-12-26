@@ -12,7 +12,7 @@
         android:layout_height="60dp"
         android:layout_marginStart="16dp"
         android:layout_marginEnd="16dp"
-        app:cardBackgroundColor="@color/white"
+        style="@style/CategoryFrame"
         app:cardCornerRadius="10dp"
         tools:viewBindingIgnore="true"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -34,7 +34,7 @@
             android:layout_marginTop="15dp"
             android:fontFamily="@font/medium"
             android:text="Sign Out"
-            android:textColor="@color/black"
+            style="@style/TextColor"
             android:textSize="16sp"
             android:textStyle="bold" />
 
@@ -46,7 +46,7 @@
         android:layout_marginTop="370dp"
         android:fontFamily="@font/medium"
         android:text="General"
-        android:textColor="@color/grey"
+        style="@style/TextColor2"
         android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.048"
@@ -57,7 +57,7 @@
         android:id="@+id/toolbar2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="?attr/colorPrimary"
+        style="@style/ToolbarBackground"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
@@ -81,7 +81,7 @@
         android:layout_marginTop="25dp"
         android:fontFamily="@font/medium"
         android:text="General"
-        android:textColor="@color/grey"
+        style="@style/TextColor2"
         android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.048"
@@ -92,9 +92,9 @@
         android:id="@+id/feedback_cardview1"
         android:layout_width="match_parent"
         android:layout_height="60dp"
+        style="@style/CategoryFrame"
         android:layout_marginEnd="16dp"
         android:layout_marginStart="16dp"
-        app:cardBackgroundColor="@color/white"
         app:cardCornerRadius="10dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -116,7 +116,7 @@
             android:layout_marginTop="8dp"
             android:fontFamily="@font/medium"
             android:text="Leave feedback !"
-            android:textColor="@color/black"
+            style="@style/TextColor"
             android:textSize="16sp"
             android:textStyle="bold" />
 
@@ -127,7 +127,7 @@
             android:layout_marginTop="30dp"
             android:fontFamily="@font/medium"
             android:text="Let us know how you like the app!"
-            android:textColor="@color/black"
+            style="@style/TextColor2"
             android:textSize="12sp"
             android:textStyle="normal" />
     </androidx.cardview.widget.CardView>
@@ -138,7 +138,7 @@
         android:layout_height="185dp"
         android:layout_marginStart="16dp"
         android:layout_marginEnd="16dp"
-        app:cardBackgroundColor="@color/white"
+        style="@style/CardBackground"
         app:cardCornerRadius="10dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -151,7 +151,7 @@
             android:layout_width="match_parent"
             android:layout_height="60dp"
             android:layout_marginTop="62dp"
-            app:cardBackgroundColor="@color/white"
+            style="@style/CategoryFrame"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/toolbar2"
@@ -170,7 +170,7 @@
                 android:layout_marginTop="15dp"
                 android:fontFamily="@font/medium"
                 android:text="Language"
-                android:textColor="@color/black"
+                style="@style/TextColor"
                 android:textSize="16sp"
                 android:textStyle="bold" />
 
@@ -182,7 +182,7 @@
             android:layout_width="match_parent"
             android:layout_height="60dp"
             android:layout_marginTop="124dp"
-            app:cardBackgroundColor="@color/white"
+            style="@style/CategoryFrame"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/toolbar2"
@@ -201,7 +201,7 @@
                 android:layout_marginTop="15dp"
                 android:fontFamily="@font/medium"
                 android:text="FAQ"
-                android:textColor="@color/black"
+                style="@style/TextColor"
                 android:textSize="16sp"
                 android:textStyle="bold" />
 
@@ -212,7 +212,7 @@
             android:id="@+id/cardView1"
             android:layout_width="match_parent"
             android:layout_height="60dp"
-            app:cardBackgroundColor="@color/white"
+            style="@style/CategoryFrame"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/toolbar2"
@@ -231,7 +231,7 @@
                 android:layout_marginTop="15dp"
                 android:fontFamily="@font/medium"
                 android:text="Switch Themes"
-                android:textColor="@color/black"
+                style="@style/TextColor"
                 android:textSize="16sp"
                 android:textStyle="bold" />
 
@@ -255,6 +255,7 @@
     <androidx.cardview.widget.CardView
         android:layout_width="match_parent"
         android:layout_height="123dp"
+        style="@style/CardBackground"
         android:layout_marginStart="16dp"
         android:layout_marginTop="-20dp"
         android:layout_marginEnd="16dp"
@@ -270,7 +271,7 @@
             android:layout_width="match_parent"
             android:layout_height="60dp"
             android:layout_marginTop="62dp"
-            app:cardBackgroundColor="@color/white"
+            style="@style/CategoryFrame"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/toolbar2"
@@ -289,7 +290,7 @@
                 android:layout_marginTop="15dp"
                 android:fontFamily="@font/medium"
                 android:text="Terms and Conditions"
-                android:textColor="@color/black"
+                style="@style/TextColor"
                 android:textSize="16sp"
                 android:textStyle="bold" />
 
@@ -300,7 +301,7 @@
             android:id="@+id/cardView4"
             android:layout_width="match_parent"
             android:layout_height="60dp"
-            app:cardBackgroundColor="@color/white"
+            style="@style/CategoryFrame"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/toolbar2"
@@ -318,8 +319,8 @@
                 android:layout_marginStart="60dp"
                 android:layout_marginTop="15dp"
                 android:fontFamily="@font/medium"
+                style="@style/TextColor"
                 android:text="Data Privacy Terms"
-                android:textColor="@color/black"
                 android:textSize="16sp"
                 android:textStyle="bold" />
 

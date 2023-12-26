@@ -21,22 +21,22 @@
             tools:src="@drawable/hot_news" />
 
         <FrameLayout
+            style="@style/CategoryFrame"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_alignParentBottom="true"
-            android:background="#bf8a96ee">
+            android:layout_alignParentBottom="true">
 
             <TextView
                 android:id="@+id/category_textView"
+                style="@style/TextColor3"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:ellipsize="end"
+                android:fontFamily="@font/medium"
                 android:gravity="center"
                 android:maxLines="1"
-                android:fontFamily="@font/medium"
                 android:paddingHorizontal="16dp"
                 android:paddingVertical="4dp"
-                android:textColor="@color/white"
                 android:textSize="18sp"
                 tools:text="Lorem ipsum dolor amet, lorem ipsum dolor amet, lorem ipsum " />
         </FrameLayout>
