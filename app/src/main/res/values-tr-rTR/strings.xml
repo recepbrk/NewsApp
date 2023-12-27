@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">NewsAppProject</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="share">Haberi Paylaş</string>
+    <string name="snackbar_undo">Geri Getir</string>
+    <string name="successfully_deleted_message">Başarıyla Silindi!</string>
+
+    <string name="home_toolbar">Güncel Haberler</string>
+    <string name="category">Keşfet</string>
+    <string name="hot_news">POPÜLER HABERLER</string>
+    <string name="technology">TEKNOLOJİ</string>
+    <string name="sport">SPOR</string>
+    <string name="finance">FİNANS</string>
+    <string name="science">BİLİM</string>
+    <string name="cinema">SİNEMA&amp;FİLM</string>
+    <string name="life">YAŞAM</string>
+    <string name="game">OYUN</string>
+    <string name="politics">POLİTİKA</string>
+    <string name="fashion">MODA&amp;GÜZELLİK</string>
+    <string name="culture">KÜLTÜR&amp;SANAT</string>
+    <string name="news_detail">Haber Detayı</string>
+    <string name="save_toolbar">Favori Haberler</string>
+    <string name="search_toolbar">Haber Arayın</string>
+    <string name="settings">Ayarlar</string>
+    <string name="general">Genel</string>
+    <string name="leave_feedback">Geri Bildirim Bırakın !</string>
+    <string name="leave_feedback2">Uygulamayı nasıl beğendiğinizi bize bildirin!</string>
+    <string name="themes">Tema Değiştir</string>
+    <string name="language">Dil</string>
+    <string name="language2">Uygulama dilini cihaz ayarlarından değiştirebilirsiniz.</string>
+    <string name="faq">Sıkça Sorulan Sorular</string>
+    <string name="agreement">Sözleşme</string>
+    <string name="data_privacy">Veri Gizliliği</string>
+    <string name="terms">Şartlar ve Koşullar</string>
+    <string name="sign_out">Çıkış Yap</string>
+
+
+</resources>

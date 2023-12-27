@@ -22,7 +22,7 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:fontFamily="@font/medium"
-            android:text="Search News"
+            android:text="@string/search_toolbar"
             android:textColor="@color/white"
             android:textSize="24sp"
             android:textStyle="bold" />
@@ -32,7 +32,7 @@
         android:id="@+id/searchEditText"
         android:layout_width="match_parent"
         android:layout_height="50dp"
-        android:hint="Search News"
+        android:hint="@string/search_toolbar"
         android:padding="8dp"
         android:background="@drawable/edittext_background"
         android:drawableStart="@drawable/search"

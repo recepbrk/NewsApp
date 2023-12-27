@@ -23,7 +23,7 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:fontFamily="@font/medium"
-            android:text="Top News"
+            android:text="@string/home_toolbar"
             android:textColor="@color/white"
             android:textSize="24sp"
             android:textStyle="bold" />

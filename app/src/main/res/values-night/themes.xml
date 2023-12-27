@@ -1,11 +1,12 @@
 <resources>
     <!-- Base application theme. -->
-    <style name="Base.Theme.NewsAppProject" parent="Theme.Material3.DayNight.NoActionBar">
+    <style name="Base.Theme.NewsAppProject" parent="Theme.Material3.Dark.NoActionBar">
         <!-- Customize your light theme here. -->
         <item name="colorPrimary">@color/purple</item>
         <item name="colorPrimaryVariant">@color/purple</item>
         <item name="android:statusBarColor">@color/night</item>
     </style>
+
 
     <style name="App.Custom.Indicator" parent="Widget.Material3.BottomNavigationView.ActiveIndicator">
         <item name="android:color">@color/night</item>

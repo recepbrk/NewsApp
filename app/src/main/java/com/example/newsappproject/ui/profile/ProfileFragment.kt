@@ -26,9 +26,10 @@ class ProfileFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
         nightMode()
 
+
     }
 
-    private fun nightMode() {
+    fun nightMode() {
         val sharedPreferences = requireActivity().getSharedPreferences("Mode", Context.MODE_PRIVATE)
         val editor = sharedPreferences.edit()
         val nightMode = sharedPreferences.getBoolean("night", false)
@@ -38,7 +39,6 @@ class ProfileFragment : Fragment() {
             AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_YES)
 
         }
-
 
         binding.switchMode.setOnCheckedChangeListener { buttonView, isChecked ->
             if (!isChecked) {
@@ -52,5 +52,4 @@ class ProfileFragment : Fragment() {
             }
         }
     }
-
 }

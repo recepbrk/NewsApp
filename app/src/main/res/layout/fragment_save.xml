@@ -23,7 +23,7 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:fontFamily="@font/medium"
-            android:text="Favorite News"
+            android:text="@string/save_toolbar"
             android:textColor="@color/white"
             android:textSize="24sp"
             android:textStyle="bold" />

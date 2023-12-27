@@ -22,7 +22,7 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:fontFamily="@font/medium"
-            android:text="Discover"
+            android:text="@string/category"
             android:textColor="@color/white"
             android:textSize="24sp"
             android:textStyle="bold" />

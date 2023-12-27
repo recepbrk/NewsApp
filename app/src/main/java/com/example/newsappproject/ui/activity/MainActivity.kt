@@ -1,13 +1,18 @@
 package com.example.newsappproject.ui.activity
 
+import android.content.Context
 import android.os.Bundle
+import android.preference.PreferenceManager
 import android.view.View
+import android.widget.Switch
 import androidx.appcompat.app.AppCompatActivity
+import androidx.appcompat.app.AppCompatDelegate
 import androidx.navigation.NavController
 import androidx.navigation.fragment.NavHostFragment
 import androidx.navigation.ui.NavigationUI
 import com.example.newsappproject.R
 import com.example.newsappproject.databinding.ActivityMainBinding
+import com.example.newsappproject.ui.profile.ProfileFragment
 import com.google.android.material.bottomnavigation.BottomNavigationView
 import dagger.hilt.android.AndroidEntryPoint
 
@@ -19,6 +24,9 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
+
+        nightModeCheck()
+
 
         val navHostFragment =
             supportFragmentManager.findFragmentById(R.id.navHostFragment) as NavHostFragment
@@ -33,6 +41,20 @@ class MainActivity : AppCompatActivity() {
         }
 
     }
+
+    private fun nightModeCheck() {
+        val sharedPreferences = getSharedPreferences("Mode", Context.MODE_PRIVATE)
+        val nightMode = sharedPreferences.getBoolean("night", false)
+
+        if (nightMode == true) {
+            AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_YES)
+        } else {
+            AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_NO)
+
+        }
+    }
+
+
 }
 
 

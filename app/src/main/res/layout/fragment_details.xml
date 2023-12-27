@@ -29,7 +29,7 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:fontFamily="@font/medium"
-            android:text="News Detail"
+            android:text="@string/news_detail"
             android:textColor="@color/white"
             android:textSize="24sp"
             android:textStyle="bold" />

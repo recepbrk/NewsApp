@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/profile"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -33,7 +34,7 @@
             android:layout_marginStart="60dp"
             android:layout_marginTop="15dp"
             android:fontFamily="@font/medium"
-            android:text="Sign Out"
+            android:text="@string/sign_out"
             style="@style/TextColor"
             android:textSize="16sp"
             android:textStyle="bold" />
@@ -43,9 +44,9 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="370dp"
+        android:layout_marginTop="360dp"
         android:fontFamily="@font/medium"
-        android:text="General"
+        android:text="@string/agreement"
         style="@style/TextColor2"
         android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -69,7 +70,7 @@
             android:layout_height="wrap_content"
             android:layout_gravity="start"
             android:fontFamily="@font/medium"
-            android:text="Settings"
+            android:text="@string/settings"
             android:textColor="@color/white"
             android:textSize="24sp"
             android:textStyle="bold" />
@@ -80,7 +81,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="25dp"
         android:fontFamily="@font/medium"
-        android:text="General"
+        android:text="@string/general"
         style="@style/TextColor2"
         android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -115,7 +116,7 @@
             android:layout_marginStart="60dp"
             android:layout_marginTop="8dp"
             android:fontFamily="@font/medium"
-            android:text="Leave feedback !"
+            android:text="@string/leave_feedback"
             style="@style/TextColor"
             android:textSize="16sp"
             android:textStyle="bold" />
@@ -126,7 +127,7 @@
             android:layout_marginStart="60dp"
             android:layout_marginTop="30dp"
             android:fontFamily="@font/medium"
-            android:text="Let us know how you like the app!"
+            android:text="@string/leave_feedback2"
             style="@style/TextColor2"
             android:textSize="12sp"
             android:textStyle="normal" />
@@ -167,13 +168,23 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="60dp"
-                android:layout_marginTop="15dp"
+                android:layout_marginTop="8dp"
                 android:fontFamily="@font/medium"
-                android:text="Language"
+                android:text="@string/language"
                 style="@style/TextColor"
                 android:textSize="16sp"
                 android:textStyle="bold" />
 
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="60dp"
+                android:layout_marginTop="30dp"
+                android:fontFamily="@font/medium"
+                android:text="@string/language2"
+                style="@style/TextColor2"
+                android:textSize="10sp"
+                android:textStyle="normal" />
 
         </androidx.cardview.widget.CardView>
 
@@ -200,7 +211,7 @@
                 android:layout_marginStart="60dp"
                 android:layout_marginTop="15dp"
                 android:fontFamily="@font/medium"
-                android:text="FAQ"
+                android:text="@string/faq"
                 style="@style/TextColor"
                 android:textSize="16sp"
                 android:textStyle="bold" />
@@ -230,7 +241,7 @@
                 android:layout_marginStart="60dp"
                 android:layout_marginTop="15dp"
                 android:fontFamily="@font/medium"
-                android:text="Switch Themes"
+                android:text="@string/themes"
                 style="@style/TextColor"
                 android:textSize="16sp"
                 android:textStyle="bold" />
@@ -289,7 +300,7 @@
                 android:layout_marginStart="60dp"
                 android:layout_marginTop="15dp"
                 android:fontFamily="@font/medium"
-                android:text="Terms and Conditions"
+                android:text="@string/terms"
                 style="@style/TextColor"
                 android:textSize="16sp"
                 android:textStyle="bold" />
@@ -320,7 +331,7 @@
                 android:layout_marginTop="15dp"
                 android:fontFamily="@font/medium"
                 style="@style/TextColor"
-                android:text="Data Privacy Terms"
+                android:text="@string/data_privacy"
                 android:textSize="16sp"
                 android:textStyle="bold" />
 
