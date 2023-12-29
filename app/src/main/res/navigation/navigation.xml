@@ -3,7 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/navigation"
-    app:startDestination="@id/bottom_home">
+    app:startDestination="@id/onBoardingFragment">
 
     <fragment
         android:id="@+id/bottom_home"
@@ -83,4 +83,45 @@
             android:id="@+id/action_categoryDetailFragment_to_bottom_category"
             app:destination="@id/bottom_category" />
     </fragment>
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="com.example.newsappproject.ui.auth.LoginFragment"
+        android:label="fragment_login"
+        tools:layout="@layout/fragment_login">
+        <action
+            android:id="@+id/action_loginFragment_to_bottom_home"
+            app:destination="@id/bottom_home" />
+    </fragment>
+    <fragment
+        android:id="@+id/signUpFragment"
+        android:name="com.example.newsappproject.ui.auth.SignUpFragment"
+        android:label="fragment_sign_up"
+        tools:layout="@layout/fragment_sign_up" />
+    <fragment
+        android:id="@+id/onBoardingFragment"
+        android:name="com.example.newsappproject.ui.auth.onboarding.OnBoardingFragment"
+        android:label="fragment_on_boarding"
+        tools:layout="@layout/fragment_on_boarding">
+        <action
+            android:id="@+id/action_onBoardingFragment_to_loginFragment"
+            app:destination="@id/loginFragment" />
+        <action
+            android:id="@+id/action_onBoardingFragment_to_bottom_home"
+            app:destination="@id/bottom_home" />
+    </fragment>
+    <fragment
+        android:id="@+id/screenOneFragment"
+        android:name="com.example.newsappproject.ui.auth.onboarding.screens.ScreenOneFragment"
+        android:label="fragment_screen_one"
+        tools:layout="@layout/fragment_screen_one" />
+    <fragment
+        android:id="@+id/screenTwoFragment"
+        android:name="com.example.newsappproject.ui.auth.onboarding.screens.ScreenTwoFragment"
+        android:label="fragment_screen_two"
+        tools:layout="@layout/fragment_screen_two" />
+    <fragment
+        android:id="@+id/screenThreeFragment"
+        android:name="com.example.newsappproject.ui.auth.onboarding.screens.ScreenThreeFragment"
+        android:label="fragment_screen_three"
+        tools:layout="@layout/fragment_screen_three" />
 </navigation>

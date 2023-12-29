@@ -2,9 +2,7 @@ package com.example.newsappproject.ui.activity
 
 import android.content.Context
 import android.os.Bundle
-import android.preference.PreferenceManager
 import android.view.View
-import android.widget.Switch
 import androidx.appcompat.app.AppCompatActivity
 import androidx.appcompat.app.AppCompatDelegate
 import androidx.navigation.NavController
@@ -12,7 +10,6 @@ import androidx.navigation.fragment.NavHostFragment
 import androidx.navigation.ui.NavigationUI
 import com.example.newsappproject.R
 import com.example.newsappproject.databinding.ActivityMainBinding
-import com.example.newsappproject.ui.profile.ProfileFragment
 import com.google.android.material.bottomnavigation.BottomNavigationView
 import dagger.hilt.android.AndroidEntryPoint
 
@@ -25,6 +22,8 @@ class MainActivity : AppCompatActivity() {
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
+
+
         nightModeCheck()
 
 
@@ -35,7 +34,11 @@ class MainActivity : AppCompatActivity() {
         val bottomNav = findViewById<BottomNavigationView>(R.id.bottom_navigation)
         navController.addOnDestinationChangedListener { _, destination, _ ->
             when (destination.id) {
+                R.id.onBoardingFragment -> bottomNav.visibility = View.GONE
                 R.id.detailsFragment -> bottomNav.visibility = View.GONE
+                R.id.screenOneFragment -> bottomNav.visibility = View.GONE
+                R.id.screenTwoFragment -> bottomNav.visibility = View.GONE
+                R.id.screenThreeFragment -> bottomNav.visibility = View.GONE
                 else -> bottomNav.visibility = View.VISIBLE
             }
         }

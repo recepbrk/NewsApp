@@ -98,4 +98,12 @@ dependencies {
     implementation("com.github.bumptech.glide:glide:4.14.2")
     kapt("com.github.bumptech.glide:compiler:4.14.2")
 
+    //DotIndicator
+    implementation("com.tbuonomo:dotsindicator:5.0")
+    //CircleImageView
+
+    implementation("de.hdodenhof:circleimageview:3.1.0")
+    implementation("androidx.viewpager2:viewpager2:1.0.0")
+
+
 }
