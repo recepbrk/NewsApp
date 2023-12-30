@@ -91,12 +91,19 @@
         <action
             android:id="@+id/action_loginFragment_to_bottom_home"
             app:destination="@id/bottom_home" />
+        <action
+            android:id="@+id/action_loginFragment_to_signUpFragment"
+            app:destination="@id/signUpFragment" />
     </fragment>
     <fragment
         android:id="@+id/signUpFragment"
         android:name="com.example.newsappproject.ui.auth.SignUpFragment"
         android:label="fragment_sign_up"
-        tools:layout="@layout/fragment_sign_up" />
+        tools:layout="@layout/fragment_sign_up">
+        <action
+            android:id="@+id/action_signUpFragment_to_loginFragment"
+            app:destination="@id/loginFragment" />
+    </fragment>
     <fragment
         android:id="@+id/onBoardingFragment"
         android:name="com.example.newsappproject.ui.auth.onboarding.OnBoardingFragment"
@@ -106,8 +113,8 @@
             android:id="@+id/action_onBoardingFragment_to_loginFragment"
             app:destination="@id/loginFragment" />
         <action
-            android:id="@+id/action_onBoardingFragment_to_bottom_home"
-            app:destination="@id/bottom_home" />
+            android:id="@+id/action_onBoardingFragment_self"
+            app:destination="@id/onBoardingFragment" />
     </fragment>
     <fragment
         android:id="@+id/screenOneFragment"

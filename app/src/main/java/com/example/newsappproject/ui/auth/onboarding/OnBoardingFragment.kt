@@ -36,6 +36,7 @@ class OnBoardingFragment : Fragment() {
         if (onBoaardingFinished()) {
             findNavController().navigate(R.id.action_onBoardingFragment_to_loginFragment)
         }
+
         val fragmentList = arrayListOf<Fragment>(
             ScreenOneFragment(),
             ScreenTwoFragment(),

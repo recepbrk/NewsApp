@@ -46,4 +46,8 @@
     <style name="TextColor3">
         <item name="android:textColor">@color/white</item>
     </style>
+
+    <style name="AuthBackground">
+        <item name="android:backgroundTint">@color/white</item>
+    </style>
 </resources>
