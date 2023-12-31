@@ -158,6 +158,7 @@
 
 
                 <com.google.android.material.button.MaterialButton
+                    android:id="@+id/google_button"
                     android:layout_width="match_parent"
                     android:layout_height="60dp"
                     android:backgroundTint="@color/color2"

@@ -33,9 +33,7 @@ class OnBoardingFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        if (onBoaardingFinished()) {
-            findNavController().navigate(R.id.action_onBoardingFragment_to_loginFragment)
-        }
+
 
         val fragmentList = arrayListOf<Fragment>(
             ScreenOneFragment(),
@@ -55,9 +53,5 @@ class OnBoardingFragment : Fragment() {
 
     }
 
-    private fun onBoaardingFinished(): Boolean {
-        val sharedPreferences =
-            requireActivity().getSharedPreferences("onboarding", Context.MODE_PRIVATE)
-        return sharedPreferences.getBoolean("finished", false)
-    }
+
 }

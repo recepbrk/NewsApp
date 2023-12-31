@@ -3,7 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/navigation"
-    app:startDestination="@id/onBoardingFragment">
+    app:startDestination="@id/splashFragment">
 
     <fragment
         android:id="@+id/bottom_home"
@@ -25,9 +25,8 @@
             android:name="article"
             app:argType="com.example.newsappproject.data.model.ResponseTopHeadLine$Article" />
         <action
-            android:id="@+id/action_detailsFragment_to_bottom_home"
-            app:destination="@id/bottom_home"
-            app:exitAnim="@android:anim/slide_out_right" />
+            android:id="@+id/action_detailsFragment_to_bottom_home2"
+            app:destination="@id/bottom_home" />
 
     </fragment>
     <fragment
@@ -103,18 +102,9 @@
         <action
             android:id="@+id/action_signUpFragment_to_loginFragment"
             app:destination="@id/loginFragment" />
-    </fragment>
-    <fragment
-        android:id="@+id/onBoardingFragment"
-        android:name="com.example.newsappproject.ui.auth.onboarding.OnBoardingFragment"
-        android:label="fragment_on_boarding"
-        tools:layout="@layout/fragment_on_boarding">
         <action
-            android:id="@+id/action_onBoardingFragment_to_loginFragment"
-            app:destination="@id/loginFragment" />
-        <action
-            android:id="@+id/action_onBoardingFragment_self"
-            app:destination="@id/onBoardingFragment" />
+            android:id="@+id/action_signUpFragment_to_bottom_home"
+            app:destination="@id/bottom_home" />
     </fragment>
     <fragment
         android:id="@+id/screenOneFragment"
@@ -131,4 +121,28 @@
         android:name="com.example.newsappproject.ui.auth.onboarding.screens.ScreenThreeFragment"
         android:label="fragment_screen_three"
         tools:layout="@layout/fragment_screen_three" />
+    <fragment
+        android:id="@+id/splashFragment"
+        android:name="com.example.newsappproject.ui.auth.onboarding.SplashFragment"
+        android:label="fragment_splash"
+        tools:layout="@layout/fragment_splash">
+        <action
+            android:id="@+id/action_splashFragment_to_loginFragment"
+            app:destination="@id/loginFragment" />
+        <action
+            android:id="@+id/action_splashFragment_to_onBoardingFragment"
+            app:destination="@id/onBoardingFragment" />
+        <action
+            android:id="@+id/action_splashFragment_to_bottom_home"
+            app:destination="@id/bottom_home" />
+    </fragment>
+    <fragment
+        android:id="@+id/onBoardingFragment"
+        android:name="com.example.newsappproject.ui.auth.onboarding.OnBoardingFragment"
+        android:label="fragment_on_boarding"
+        tools:layout="@layout/fragment_on_boarding">
+        <action
+            android:id="@+id/action_onBoardingFragment_to_loginFragment"
+            app:destination="@id/loginFragment" />
+    </fragment>
 </navigation>

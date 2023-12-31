@@ -46,6 +46,7 @@ class SaveFragment : Fragment() {
             val action =
                 SaveFragmentDirections.actionBottomSaveToDetailsFragment(it)
             findNavController().navigate(action)
+
         }
     }
 
@@ -87,6 +88,5 @@ class SaveFragment : Fragment() {
             attachToRecyclerView(binding.recyclerviewFavorite)
         }
     }
-
 
 }

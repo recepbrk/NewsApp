@@ -5,11 +5,10 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import androidx.appcompat.app.AppCompatDelegate
 import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.findNavController
+import com.example.newsappproject.R
 import com.example.newsappproject.databinding.FragmentScreenThreeBinding
-import com.example.newsappproject.ui.auth.onboarding.OnBoardingFragmentDirections
 
 
 class ScreenThreeFragment : Fragment() {
@@ -32,8 +31,8 @@ class ScreenThreeFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
 
         binding.finishButton.setOnClickListener {
-            val action = OnBoardingFragmentDirections.actionOnBoardingFragmentToLoginFragment()
-            findNavController().navigate(action)
+
+            findNavController().navigate(R.id.action_onBoardingFragment_to_loginFragment)
             onBoardingFinished()
         }
     }

@@ -44,6 +44,7 @@ class DetailsFragment : Fragment() {
 
     }
 
+    @SuppressLint("SetJavaScriptEnabled")
     private fun webView() {
         url = args.article.url
         binding.webwiew.webViewClient = WebViewClient()
@@ -53,9 +54,9 @@ class DetailsFragment : Fragment() {
 
     private fun backButton() {
 
-        binding.backIcon.setOnClickListener {
-            val aciton = DetailsFragmentDirections.actionDetailsFragmentToBottomHome()
-            findNavController().navigate(aciton)
+        binding.toolbar.setNavigationOnClickListener {
+            findNavController().navigateUp()
+
         }
     }
 
