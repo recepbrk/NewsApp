@@ -5,7 +5,7 @@
     style="@style/CardBackground"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ui.auth.onboarding.OnBoardingFragment">
+    tools:context=".ui.auth.viewpager.OnBoardingFragment">
 
     <androidx.viewpager2.widget.ViewPager2
         android:id="@+id/view_pager"

@@ -1,4 +1,4 @@
-package com.example.newsappproject.ui.auth
+package com.example.newsappproject.ui.auth.login
 
 import android.annotation.SuppressLint
 import android.app.Activity

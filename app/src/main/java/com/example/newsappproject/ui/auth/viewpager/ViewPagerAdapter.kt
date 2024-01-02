@@ -1,4 +1,4 @@
-package com.example.newsappproject.ui.auth.onboarding.viewpager
+package com.example.newsappproject.ui.auth.viewpager
 
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.FragmentManager

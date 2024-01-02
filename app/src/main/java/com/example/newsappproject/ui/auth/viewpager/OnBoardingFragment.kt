@@ -1,18 +1,14 @@
-package com.example.newsappproject.ui.auth.onboarding
+package com.example.newsappproject.ui.auth.viewpager
 
-import android.content.Context
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
-import androidx.navigation.fragment.findNavController
-import com.example.newsappproject.R
 import com.example.newsappproject.databinding.FragmentOnBoardingBinding
-import com.example.newsappproject.ui.auth.onboarding.screens.ScreenOneFragment
-import com.example.newsappproject.ui.auth.onboarding.screens.ScreenThreeFragment
-import com.example.newsappproject.ui.auth.onboarding.screens.ScreenTwoFragment
-import com.example.newsappproject.ui.auth.onboarding.viewpager.ViewPagerAdapter
+import com.example.newsappproject.ui.auth.screens.ScreenOneFragment
+import com.example.newsappproject.ui.auth.screens.ScreenThreeFragment
+import com.example.newsappproject.ui.auth.screens.ScreenTwoFragment
 
 class OnBoardingFragment : Fragment() {
     private lateinit var binding: FragmentOnBoardingBinding

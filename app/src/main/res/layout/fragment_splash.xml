@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     style="@style/splashBackground"
-    tools:context=".ui.auth.onboarding.SplashFragment">
+    tools:context=".ui.splash.SplashFragment">
 
 
     <ImageView

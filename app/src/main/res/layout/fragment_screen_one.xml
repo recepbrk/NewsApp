@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     style="@style/CardBackground"
-    tools:context=".ui.auth.onboarding.screens.ScreenOneFragment">
+    tools:context=".ui.auth.screens.ScreenOneFragment">
 
     <de.hdodenhof.circleimageview.CircleImageView
         android:id="@+id/profile_image"

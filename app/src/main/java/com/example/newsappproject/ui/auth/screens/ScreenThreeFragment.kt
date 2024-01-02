@@ -1,4 +1,4 @@
-package com.example.newsappproject.ui.auth.onboarding.screens
+package com.example.newsappproject.ui.auth.screens
 
 import android.content.Context
 import android.os.Bundle

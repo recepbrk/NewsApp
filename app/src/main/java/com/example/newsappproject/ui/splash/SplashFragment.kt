@@ -1,4 +1,4 @@
-package com.example.newsappproject.ui.auth.onboarding
+package com.example.newsappproject.ui.splash
 
 import android.content.Context
 import android.os.Bundle

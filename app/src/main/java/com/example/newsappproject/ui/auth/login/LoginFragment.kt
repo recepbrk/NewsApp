@@ -1,8 +1,7 @@
-package com.example.newsappproject.ui.auth
+package com.example.newsappproject.ui.auth.login
 
 import android.annotation.SuppressLint
 import android.app.Activity
-import android.content.Context
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
