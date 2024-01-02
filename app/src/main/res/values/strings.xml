@@ -33,6 +33,7 @@
     <string name="data_privacy">Data Privacy Terms</string>
     <string name="terms">Terms and Conditions</string>
     <string name="sign_out">Sign Out</string>
+    <string name="client_id">YOUR_CLIEND_ID</string>
 
 
 </resources>

@@ -35,6 +35,7 @@
     <string name="data_privacy">Veri Gizliliği</string>
     <string name="terms">Şartlar ve Koşullar</string>
     <string name="sign_out">Çıkış Yap</string>
+    <string name="client_id">YOUR_CLIEND_ID</string>
 
 
 </resources>

@@ -31,7 +31,7 @@ class ProfileFragment : Fragment() {
     }
 
     fun nightMode() {
-        val sharedPreferences = requireActivity().getSharedPreferences("Mode", Context.MODE_PRIVATE)
+        val sharedPreferences = requireContext().getSharedPreferences("Mode", Context.MODE_PRIVATE)
         val editor = sharedPreferences.edit()
         val nightMode = sharedPreferences.getBoolean("night", false)
 

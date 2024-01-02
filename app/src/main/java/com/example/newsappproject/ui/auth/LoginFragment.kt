@@ -98,7 +98,7 @@ class LoginFragment : Fragment() {
         firebaseAuth.signInWithCredential(credentinal).addOnCompleteListener {
             if (it.isSuccessful) {
                 findNavController().navigate(R.id.action_loginFragment_to_bottom_home)
-                loginFinished()
+
             } else {
                 Toast.makeText(context, it.exception.toString(), Toast.LENGTH_SHORT).show()
 
@@ -147,13 +147,6 @@ class LoginFragment : Fragment() {
             }
     }
 
-    private fun loginFinished() {
-        val sharedPreferences =
-            requireActivity().getSharedPreferences("login", Context.MODE_PRIVATE)
-        val editor = sharedPreferences.edit()
-        editor.putBoolean("finish", true)
-        editor.apply()
-    }
 
     private fun loginOperation() {
         firebaseAuth = FirebaseAuth.getInstance()
@@ -173,7 +166,7 @@ class LoginFragment : Fragment() {
                             val action =
                                 LoginFragmentDirections.actionLoginFragmentToBottomHome()
                             findNavController().navigate(action)
-                            loginFinished()
+
                         } else
                             Toast.makeText(context, it.exception.toString(), Toast.LENGTH_SHORT)
                                 .show()
