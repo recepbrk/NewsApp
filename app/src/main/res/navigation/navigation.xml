@@ -84,7 +84,7 @@
     </fragment>
     <fragment
         android:id="@+id/loginFragment"
-        android:name="com.example.newsappproject.ui.auth.LoginFragment"
+        android:name="com.example.newsappproject.ui.auth.login.LoginFragment"
         android:label="fragment_login"
         tools:layout="@layout/fragment_login">
         <action
@@ -96,7 +96,7 @@
     </fragment>
     <fragment
         android:id="@+id/signUpFragment"
-        android:name="com.example.newsappproject.ui.auth.SignUpFragment"
+        android:name="com.example.newsappproject.ui.auth.login.SignUpFragment"
         android:label="fragment_sign_up"
         tools:layout="@layout/fragment_sign_up">
         <action
@@ -108,22 +108,22 @@
     </fragment>
     <fragment
         android:id="@+id/screenOneFragment"
-        android:name="com.example.newsappproject.ui.auth.onboarding.screens.ScreenOneFragment"
+        android:name="com.example.newsappproject.ui.auth.screens.ScreenOneFragment"
         android:label="fragment_screen_one"
         tools:layout="@layout/fragment_screen_one" />
     <fragment
         android:id="@+id/screenTwoFragment"
-        android:name="com.example.newsappproject.ui.auth.onboarding.screens.ScreenTwoFragment"
+        android:name="com.example.newsappproject.ui.auth.screens.ScreenTwoFragment"
         android:label="fragment_screen_two"
         tools:layout="@layout/fragment_screen_two" />
     <fragment
         android:id="@+id/screenThreeFragment"
-        android:name="com.example.newsappproject.ui.auth.onboarding.screens.ScreenThreeFragment"
+        android:name="com.example.newsappproject.ui.auth.screens.ScreenThreeFragment"
         android:label="fragment_screen_three"
         tools:layout="@layout/fragment_screen_three" />
     <fragment
         android:id="@+id/splashFragment"
-        android:name="com.example.newsappproject.ui.auth.onboarding.SplashFragment"
+        android:name="com.example.newsappproject.ui.splash.SplashFragment"
         android:label="fragment_splash"
         tools:layout="@layout/fragment_splash">
         <action
@@ -138,7 +138,7 @@
     </fragment>
     <fragment
         android:id="@+id/onBoardingFragment"
-        android:name="com.example.newsappproject.ui.auth.onboarding.OnBoardingFragment"
+        android:name="com.example.newsappproject.ui.auth.viewpager.OnBoardingFragment"
         android:label="fragment_on_boarding"
         tools:layout="@layout/fragment_on_boarding">
         <action

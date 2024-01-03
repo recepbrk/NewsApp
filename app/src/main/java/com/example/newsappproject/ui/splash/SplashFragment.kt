@@ -7,20 +7,15 @@ import android.os.Looper
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.appcompat.app.AppCompatDelegate
 import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.findNavController
 import com.example.newsappproject.R
+import dagger.hilt.android.AndroidEntryPoint
 
 
-
+@AndroidEntryPoint
 class SplashFragment : Fragment() {
-
-
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
-
-    }
-
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
@@ -31,6 +26,8 @@ class SplashFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
+
+        nightModeCheck()
         Handler(Looper.getMainLooper()).postDelayed({
 
             if (onBoardingFinished()) {
@@ -47,11 +44,26 @@ class SplashFragment : Fragment() {
     }
 
     private fun onBoardingFinished(): Boolean {
-        val sharedPref = requireActivity().applicationContext.getSharedPreferences(
+
+        val sharedPref = requireContext().getSharedPreferences(
             "onboarding",
             Context.MODE_PRIVATE
         )
         return sharedPref.getBoolean("finished", false)
+    }
+
+    private fun nightModeCheck() {
+
+        val sharedPreferences =
+            requireContext().getSharedPreferences("Mode", Context.MODE_PRIVATE)
+        val nightMode = sharedPreferences.getBoolean("night", false)
+
+        if (nightMode == true) {
+            AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_YES)
+        } else {
+            AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_NO)
+
+        }
     }
 
 

@@ -51,6 +51,6 @@
     </style>
 
     <style name="splashBackground">
-        <item name="android:background">@color/purple</item>
+        <item name="android:background">@color/black</item>
     </style>
 </resources>
