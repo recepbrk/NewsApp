@@ -47,3 +47,31 @@
 **[Other Screenshots](Screenshoots)**
 
 </div>
+
+## Tech stack & Open-source libraries
+
+- Minimum SDK level 23
+- [Kotlin](https://kotlinlang.org/), [Coroutines](https://github.com/Kotlin/kotlinx.coroutines) and [LiveData](https://developer.android.com/topic/libraries/architecture/livedata)
+- Clean Architecture
+- [Navigation Component](https://developer.android.com/guide/navigation) - Single activity multiple fragments approach
+- [JetPack](https://developer.android.com/jetpack)
+    - [LiveData](https://developer.android.com/topic/libraries/architecture/livedata) - Observable lists.
+    - [Lifecycle](https://developer.android.com/topic/libraries/architecture/lifecycle) - Dispose of observing data when lifecycle state changes.
+    - [Fragment-ktx](https://developer.android.com/kotlin/ktx#fragment) - A set of Kotlin extensions that helps with fragment lifecycle.
+    - [View Binding](https://developer.android.com/topic/libraries/view-binding) - Allows you to more easily write code that interacts with views
+    - [Data Binding](https://developer.android.com/topic/libraries/data-binding?hl=en) - Data Binding is the process of binding data to a layout xml file.
+    - [ViewModel](https://developer.android.com/topic/libraries/architecture/viewmodel) - UI related data holder, lifecycle aware.
+- [Firebase](https://firebase.google.com/)
+    - [Authentication](https://firebase.google.com/docs/auth?hl=tr) 
+    - [Authentication -Email](https://firebase.google.com/docs/auth/android/email-link-auth?hl=tr)
+    - [Authentication -Google](https://firebase.google.com/docs/auth/android/google-signin?hl=tr) 
+- [Hilt](https://developer.android.com/training/dependency-injection/hilt-android) is a dependency injection library for Android
+- [Room](https://developer.android.com/training/data-storage/room) persistence library provides an abstraction layer over SQLite to allow fluent database access while harnessing the full power of SQLite. 
+- [Retrofit](https://square.github.io/retrofit/) A type-safe HTTP client for Android
+- [Glide](https://github.com/bumptech/glide) - Glide is a fast and efficient open source media management and image loading framework for Android
+- [Coil](https://github.com/coil-kt/coil) -  Coil is a fast and efficient open source media management and image loading framework for Android
+
+## Architecture
+This app uses [***MVVM (Model View View-Model)***](https://developer.android.com/jetpack/docs/guide#recommended-app-arch) architecture
+
+![](https://uploads.toptal.io/blog/image/127608/toptal-blog-image-1543413671794-80993a19fea97477524763c908b50a7a.png)
