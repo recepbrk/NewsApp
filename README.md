@@ -84,15 +84,16 @@ This app uses [***MVVM (Model View View-Model)***](https://developer.android.com
 
 ## API Key 🔑
 
-- - You will need to provide a private key to retrieve data from the NEWS API.
+- You will need to provide a private key to retrieve data from the NEWS API.
 - Generate a new key from [here](https://newsapi.org/). 
 
 ``` API_KEY = YOUR_API_KEY ```
 
 ## Find this repository useful?
 
-Don't forget give a star. ⭐
-You can follow me on Github 💻
+- Don't forget give a star. ⭐
+- You can follow me on Github 💻
+-   <a href="https://github.com/recepbrk"><img alt="Profile" src="https://img.shields.io/badge/github-recepbrk-blue"/></a> 
 
 ## Licence
 
