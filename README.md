@@ -1,4 +1,9 @@
 <h1 align="center">RNEWS</h1></br>
+<p align="center">
+  RNEWS is a news application where you can read current news, save news and search for news.
+</p>
+
+
 
 <p align="center">
   <a href="https://opensource.org/licenses/Apache-2.0"><img alt="License" src="https://img.shields.io/badge/License-Apache%202.0-blue.svg"/></a>
@@ -49,8 +54,7 @@
 </div>
 
 ## Tech stack & Open-source libraries
-
-- Minimum SDK level 23
+- My application supports 2 languages: English and Turkish.
 - [Kotlin](https://kotlinlang.org/), [Coroutines](https://github.com/Kotlin/kotlinx.coroutines) and [LiveData](https://developer.android.com/topic/libraries/architecture/livedata)
 - Clean Architecture
 - [Navigation Component](https://developer.android.com/guide/navigation) - Single activity multiple fragments approach
@@ -70,8 +74,40 @@
 - [Retrofit](https://square.github.io/retrofit/) A type-safe HTTP client for Android
 - [Glide](https://github.com/bumptech/glide) - Glide is a fast and efficient open source media management and image loading framework for Android
 - [Coil](https://github.com/coil-kt/coil) -  Coil is a fast and efficient open source media management and image loading framework for Android
+- [Localization](https://developer.android.com/guide/topics/resources/localization?hl=en) -  Two language options are available in the application using Localization
+
 
 ## Architecture
 This app uses [***MVVM (Model View View-Model)***](https://developer.android.com/jetpack/docs/guide#recommended-app-arch) architecture
 
 ![](https://uploads.toptal.io/blog/image/127608/toptal-blog-image-1543413671794-80993a19fea97477524763c908b50a7a.png)
+
+## API Key 🔑
+
+- - You will need to provide a private key to retrieve data from the NEWS API.
+- Generate a new key from [here](https://newsapi.org/). 
+
+``` API_KEY = YOUR_API_KEY ```
+
+## Find this repository useful?
+
+Don't forget give a star. ⭐
+You can follow me on Github 💻
+
+## Licence
+
+```
+    Designed and developed by 2024 recepbrk (Recep Güzel)
+
+   Licensed under the Apache License, Version 2.0 (the "License");
+   you may not use this file except in compliance with the License.
+   You may obtain a copy of the License at
+
+     http://www.apache.org/licenses/LICENSE-2.0
+
+   Unless required by applicable law or agreed to in writing, software
+   distributed under the License is distributed on an "AS IS" BASIS,
+   WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+   See the License for the specific language governing permissions and
+   limitations under the License.
+```
