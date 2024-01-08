@@ -12,41 +12,28 @@
 </p>
 
 ### Screenshots
-
 ### Light Version
+| Splash Screen | Home Screen | News Details Screen | Category Screen |
+| ------------- | ------------- | ------------- | ------------- |
+| ![Main Screen](Screenshoots/splash.jpg) | ![Main Screen](Screenshoots/news.jpg) | ![Main Screen](Screenshoots/details.jpg) | ![Main Screen](Screenshoots/discover.jpg) |
 
-***
-<div>
-<img src="Screenshoots/splash.jpg" width="180" height="360" float:left>
-<img src="Screenshoots/news.jpg" width="180" height="360" float:left>
-<img src="Screenshoots/details.jpg" width="180" height="360" float:left>
-<img src="Screenshoots/discover.jpg" width="180" height="360" float:left>
-<br>
-  
-<img src="Screenshoots/category.jpg" width="180" height="360" float:left>
-<img src="Screenshoots/save.jpg" width="180" height="360" float:left>
-<img src="Screenshoots/search.jpg" width="180" height="360" float:left>
-<img src="Screenshoots/settings.jpg" width="180" height="360" float:left >
+| Category Details Screen | Save Screen | Search Screen | Settings Screen |
+| ------------- | ------------- | ------------- | ------------- |
+| ![Main Screen](Screenshoots/category.jpg) | ![Detail Screen](Screenshoots/save.jpg) | ![Detail Screen](Screenshoots/search.jpg) | ![Detail Screen](Screenshoots/settings.jpg)
+
 
 **[Other Screenshots](Screenshoots)**
 
 </div>
 
 ### Dark Version
+| Splash Screen | Home Screen | News Details Screen | Category Screen |
+| ------------- | ------------- | ------------- | ------------- |
+| ![Main Screen](Screenshoots/dark_splash.jpg) | ![Main Screen](Screenshoots/dark_news.jpg) | ![Main Screen](Screenshoots/dark_details.jpg) | ![Main Screen](Screenshoots/dark_discover.jpg) |
 
-***
-<div>
-<img src="Screenshoots/dark_splash.jpg" width="180" height="360" float:left>
-<img src="Screenshoots/dark_news.jpg" width="180" height="360" float:left>  
-<img src="Screenshoots/dark_details.jpg" width="180" height="360" float:left>
-<img src="Screenshoots/dark_discover.jpg" width="180" height="360" float:left>
-  <br>
-
-<img src="Screenshoots/dark_category.jpg" width="180" height="360" float:left>
-<img src="Screenshoots/dark_save.jpg" width="180" height="360" float:left>
-<img src="Screenshoots/dark_search.jpg" width="180" height="360" float:left>
-<img src="Screenshoots/dark_settings.jpg" width="180" height="360" float:left>
-
+| Category Details Screen | Save Screen | Search Screen | Settings Screen |
+| ------------- | ------------- | ------------- | ------------- |
+| ![Main Screen](Screenshoots/dark_category.jpg) | ![Detail Screen](Screenshoots/dark_save.jpg) | ![Detail Screen](Screenshoots/dark_search.jpg) | ![Detail Screen](Screenshoots/dark_settings.jpg)
 
 
 **[Other Screenshots](Screenshoots)**
