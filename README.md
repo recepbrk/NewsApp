@@ -13,7 +13,7 @@
 
 ### Screenshots
 ### Light Version
-| Splash Screen | Home Screen | News Details Screen | Category Screen |
+| Splash Screen | Home Screen | News Details Screen | Category Screen | 
 | ------------- | ------------- | ------------- | ------------- |
 | ![Main Screen](Screenshoots/splash.jpg) | ![Main Screen](Screenshoots/news.jpg) | ![Main Screen](Screenshoots/details.jpg) | ![Main Screen](Screenshoots/discover.jpg) |
 
